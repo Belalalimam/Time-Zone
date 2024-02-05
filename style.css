@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/*==============================Start Navbar==============================*/
+.navbar{
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    width: 100%;
+    /* padding: 15px 30px; */
+    box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+}
+.navbar-nav .nav-item .nav-link{
+    color: rgb(5,5,5);
+    transition: all 0.6s ease;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    background-color: rgba(255, 0, 0, 0.507);
+    font-size: 18px;
+}
+/*==============================End Navbar==============================*/
+/*==============================Start Welcom==============================*/
+.Welcome{
+    margin-top: 58px;
+    background-color: rgb(240, 240, 242);
+}
+.Welcome .container .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Welcome .container .row h1{
+    font-size: 80px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: rgb(11, 28, 57);
+}
+.Welcome .container .row p{
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(33, 32, 37);
+    padding: 30px 0;
+}
+.Welcome .container .row a{
+    padding: 15px 29px;
+    background-color: rgb(74, 74, 75);
+    color: rgb(255, 255,255);
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    background: linear-gradient(to left, #4a4a4b , #4a4a4b) no-repeat;
+    background-size: 0%;
+    background-color: #ff2020;
+    border: none;
+    transition: all 0.5s ease;
+}
+.Welcome .container .row a:hover{
+    background-size: 100%; 
+}
+/* ==============================End Welcom==============================*/
+/* ==============================Start section1==============================*/
+
+.section1 .container .row .Products{
+    transition: all 0.6s ease;
+}
+.section1 .container .TITL .Products:hover{
+    transform: scale(1.1);
+}
+/* ==============================End section1==============================*/
+/* ==============================Start section2==============================*/
+.Section2{
+    background-color: rgb(240, 240, 242);
+    margin-top: 150px;
+}
+.Section2 .container-fluid .row .Product img{
+    width: 100%;
+}
+.Section2 .container-fluid .row .pr .per{
+    margin-top: 33px;
+}
+.Section2 .container .row .col{
+    transition: all 0.6s ease;
+}
+.Section2 .container .row .col:hover{
+    transform: scale(1.1);
+}
+/*==============================End section2==============================*/
+/*==============================Start section3==============================*/
+.Section3{
+    margin-top: 200px;
+}
+.Section3 .container-fluid .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+}
+
+.Section3 .container-fluid .h .popular{
+    position: relative;
+    border-bottom: 2px solid #ff2020;
+}
+.Section3 .container-fluid .h .popular h3{
+    color: white;
+    font-size: 20px;
+}
+.Section3 .container-fluid .row .popular .hh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 0%;
+    background-color: #ff2020df;
+    transition: all 0.1s ease-out;
+    height: 80px;
+    visibility: hidden;
+}
+.Section3 .container-fluid .row .popular .hh .fa-heart{
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 30px;
+    visibility: hidden;
+}
+.Section3 .container-fluid .row .popular:hover .hh{
+    visibility: visible;
+}
+.Section3 .container-fluid .row .popular:hover .hh .fa-heart{
+    visibility: visible;
+}
+.Section3 .container-fluid .row .Paragraph{
+    width: 500px;
+    margin: 5px;
+}
+.Section3  h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+.Section3 .container .row .big .title .paragraph{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/*==============================End section3==============================*/
+/*==============================Start section4==============================*/
+.Section4{
+    margin-top: 120px;
+}
+.Section4 .container .row{
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Section4 .container .row h1{
+    font-size: 80px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: rgb(11, 28, 57);
+}
+.Section4 .container .row p{
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(33, 32, 37);
+    padding: 30px 0;
+}
+.Section4 .container .row .gg .kik{
+    margin-top: 100px;
+}
+.Section4 .container .row a{
+    padding: 15px 29px;
+    background-color: rgb(74, 74, 75);
+    color: rgb(255, 255,255);
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    background: linear-gradient(to left, #4a4a4b , #4a4a4b) no-repeat;
+    background-size: 0%;
+    background-color: #ff2020;
+    border: none;
+    transition: all 0.5s ease;
+}
+.Section4 .container .row a:hover{
+    background-size: 100%; 
+}
+/* ==============================End section4==============================*/
+/*==============================Start section5==============================*/
+.Section5 .container .row{
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Section5 .container .row h1{
+    font-size: 80px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: rgb(11, 28, 57);
+}
+.Section5 .container .row p{
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(33, 32, 37);
+    padding: 30px 0;
+}
+.Section5 .container .row .gg .kik{
+    margin-top: 100px;
+}
+.Section5 .container .row .gg .kik a{
+    padding: 15px 29px;
+    background-color: rgb(74, 74, 75);
+    color: rgb(255, 255,255);
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    background: linear-gradient(to left, #4a4a4b , #4a4a4b) no-repeat;
+    background-size: 0%;
+    background-color: #ff2020;
+    border: none;
+    transition: all 0.5s ease;
+}
+.Section4 .container .row a:hover{
+    background-size: 100%;
+}
+/* ==============================End section5==============================*/
+/* ==============================Start section6==============================*/
+.Section6{
+    margin-top: 120px;
+}
+.Section6 .container .row .theend{
+    color: white;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+    
+}
+.Section6 .container .row .theend i{
+    font-size: 100px;
+    
+}
+.Section6 .container .row .theend h4{
+    font-size: 20px;
+    
+}
+/* ==============================End section6==============================*/
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+    .Welcome .container .row{
+        padding: 50px 0;
+    }
+    .Welcome .container .row h1{
+        font-size: 35px;
+    }
+    .Welcome .container .row img{
+        display: none;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .Welcome .container .row h1{
+        font-size: 50px;
+    }
+    .Welcome .container .row img{
+        height: 500px;
+        display: none;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
