@@ -141,24 +141,33 @@
     width: 500px;
     margin: 5px;
 }
-.Section3  h1{
+.Section3 .container-fluid  h1{
     font-size: 50px;
     font-weight: 900;
+    display: flex;
+    justify-content: space-between;
 }
-.Section3 .container .row .big .title .paragraph{
+.Section3 .container-fluid .row .minWidth {
+    width: 18rem;
+}
+.Section3 .container-fluid .row .big .title .paragraph{
     font-size: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 /*==============================End section3==============================*/
 /*==============================Start section4==============================*/
-.Section4{
+/* .Section4{
     margin-top: 120px;
-}
+} */
 .Section4 .container .row{
-    height: 900px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.Section4 .container .row .you{
+    display: flex;
+    justify-content: center;
 }
 .Section4 .container .row h1{
     font-size: 80px;
@@ -199,7 +208,7 @@
 /* ==============================End section4==============================*/
 /*==============================Start section5==============================*/
 .Section5 .container .row{
-    height: 900px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -262,6 +271,9 @@
 }
 /* ==============================End section6==============================*/
 @media only screen and (min-width: 0px) and (max-width: 575px) {
+    .Welcome{
+        width: auto;
+    }
     .Welcome .container .row{
         padding: 50px 0;
     }
@@ -270,6 +282,29 @@
     }
     .Welcome .container .row img{
         display: none;
+    }
+    .Section1 .container .row .Products img {
+        width: 70%;
+    }
+    .Section4 .container .row h1{
+        font-size: 44px;
+    }
+    .Section4 .container .row p{
+        font-size: 10px;
+    }
+    .Section5 .container .row h1{
+        font-size: 44px;
+    }
+    .Section5 .container .row p{
+        font-size: 10px;
+    }
+    .Section4 .container .row img{
+        width: 50%;
+        height: 50%;
+    }
+    .Section5 .container .row img{
+        width: 50%;
+        height: 50%;
     }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -280,9 +315,39 @@
         height: 500px;
         display: none;
     }
+    .Section1 .container .row .Products img {
+        width: 70%;
+    }
+    .Section4 .container .row h1{
+        font-size: 50px;
+    }
+    .Section4 .container .row p{
+        font-size: 15px;
+    }
+    .Section5 .container .row h1{
+        font-size: 50px;
+    }
+    .Section5 .container .row p{
+        font-size: 15px;
+    }
+    .Section4 .container .row img{
+        width: 75%;
+
+    }
+    .Section5 .container .row img{
+        width: 75%;
+
+    }
+    
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .Section1 .container .row .Products img {
+        width: 70%;
+    }
+    .Section4 .container .row img{
+        width: 85%;
 
+    }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 }
