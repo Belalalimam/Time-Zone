@@ -98,22 +98,22 @@
 .Section3{
     margin-top: 200px;
 }
-.Section3 .container-fluid .row{
+/* .Section3 .container-fluid .row{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 1px;
-}
+} */
 
-.Section3 .container-fluid .h .popular{
+.Section3 .container-fluid .CardContainer .Card{
     position: relative;
     border-bottom: 2px solid #ff2020;
 }
-.Section3 .container-fluid .h .popular h3{
+.Section3 .container-fluid .CardContainer .Card h3{
     color: white;
     font-size: 20px;
 }
-.Section3 .container-fluid .row .popular .hh{
+.Section3 .container-fluid .row .Card .CTA{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,7 +123,7 @@
     height: 80px;
     visibility: hidden;
 }
-.Section3 .container-fluid .row .popular .hh .fa-heart{
+.Section3 .container-fluid .row .Card .CTA .fa-heart{
     display: flex;
     position: absolute;
     right: 0;
@@ -131,14 +131,16 @@
     font-size: 30px;
     visibility: hidden;
 }
-.Section3 .container-fluid .row .popular:hover .hh{
+.Section3 .container-fluid .row .Card:hover .CTA{
     visibility: visible;
 }
-.Section3 .container-fluid .row .popular:hover .hh .fa-heart{
+.Section3 .container-fluid .row .Card:hover .CTA .fa-heart{
     visibility: visible;
 }
+
+
 .Section3 .container-fluid .row .Paragraph{
-    width: 500px;
+    /* width: 500px; */
     margin: 5px;
 }
 .Section3 .container-fluid  h1{
