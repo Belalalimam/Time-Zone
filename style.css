@@ -1,8 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* .oswald-<uniquifier> {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+:root {
+    --50: #f6f6f6;
+    --100: #e7e7e7;
+    --200: #d1d1d1;
+    --300: #b0b0b0;
+    --400: #888888;
+    --500: #6d6d6d;
+    --600: #5d5d5d;
+    --700: #4f4f4f;
+    --800: #454545;
+    --900: #3d3d3d;
+    --950: #000000;
+}
+
+.border1{
+    border: 2px solid var(--950) !important;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: "Oswald", sans-serif;
 }
 /*==============================Start Navbar==============================*/
 .navbar{
@@ -27,6 +55,7 @@
 .Welcome{
     margin-top: 58px;
     background-color: rgb(240, 240, 242);
+    height: auto;
 }
 .Welcome .container .row{
     display: flex;
@@ -68,19 +97,20 @@
 }
 /* ==============================End Welcom==============================*/
 /* ==============================Start section1==============================*/
-
+.ContainerProduct{
+    overflow: hidden;
+}
 .section1 .container .row .Products{
     transition: all 0.6s ease;
 }
 .section1 .container .TITL .Products:hover{
     transform: scale(1.1);
+    overflow: hidden;
+
 }
 /* ==============================End section1==============================*/
 /* ==============================Start section2==============================*/
-.Section2{
-    background-color: rgb(240, 240, 242);
-    margin-top: 150px;
-}
+
 .Section2 .container-fluid .row .Product img{
     width: 100%;
 }
@@ -105,25 +135,29 @@
     margin: 1px;
 } */
 
-.Section3 .container-fluid .CardContainer .Card{
+.Section3 .container .CardContainer .Card{
     position: relative;
     border-bottom: 2px solid #ff2020;
 }
-.Section3 .container-fluid .CardContainer .Card h3{
+.Section3 .container .CardContainer .Card h3{
     color: white;
     font-size: 20px;
 }
-.Section3 .container-fluid .row .Card .CTA{
+.Section3 .container .row .Card .CTA{
     display: flex;
     justify-content: center;
     align-items: center;
     background-size: 0%;
     background-color: #ff2020df;
-    transition: all 0.1s ease-out;
+    /* transition: all 0.5s  ease; */
+
     height: 80px;
     visibility: hidden;
 }
-.Section3 .container-fluid .row .Card .CTA .fa-heart{
+.Section3 .container .row .Card{
+    transition: all 5s  ease;
+}
+.Section3 .container .row .Card .CTA .fa-heart{
     display: flex;
     position: absolute;
     right: 0;
@@ -131,30 +165,30 @@
     font-size: 30px;
     visibility: hidden;
 }
-.Section3 .container-fluid .row .Card:hover .CTA{
+.Section3 .container .row .Card:hover .CTA{
     visibility: visible;
+    transition: all  0.5s ease-in;
+
 }
-.Section3 .container-fluid .row .Card:hover .CTA .fa-heart{
+.Section3 .container .row .Card:hover .CTA .fa-heart{
     visibility: visible;
 }
 
 
-.Section3 .container-fluid .row .Paragraph{
-    /* width: 500px; */
-    margin: 5px;
+.Section3 .container .row .Paragraph{
+    width: 500px !important;
 }
-.Section3 .container-fluid  h1{
+/* .Section3 .container  h1{
     font-size: 50px;
     font-weight: 900;
     display: flex;
     justify-content: space-between;
-}
-.Section3 .container-fluid .row .minWidth {
+} */
+.Section3 .container .row .minWidth {
     width: 18rem;
 }
-.Section3 .container-fluid .row .big .title .paragraph{
+.Section3 .container .row .big .title .paragraph{
     font-size: 30px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 /*==============================End section3==============================*/
 /*==============================Start section4==============================*/
