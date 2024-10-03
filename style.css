@@ -32,6 +32,15 @@
     scroll-behavior: smooth;
     font-family: "Oswald", sans-serif;
 }
+.footer-tittle a{
+    text-decoration: none !important;
+    color: var(--500);
+
+
+}
+li{
+    list-style: none !important;
+}
 /*==============================Start Navbar==============================*/
 .navbar{
     top: 0;
@@ -91,6 +100,8 @@
     background-color: #ff2020;
     border: none;
     transition: all 0.5s ease;
+
+    
 }
 .Welcome .container .row a:hover{
     background-size: 100%; 
@@ -126,14 +137,14 @@
 /*==============================End section2==============================*/
 /*==============================Start section3==============================*/
 .Section3{
-    margin-top: 200px;
+    margin-top: 100px;
 }
-/* .Section3 .container-fluid .row{
+.Section3 .container .row{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 1px;
-} */
+}
 
 .Section3 .container .CardContainer .Card{
     position: relative;
@@ -143,19 +154,19 @@
     color: white;
     font-size: 20px;
 }
-.Section3 .container .row .Card .CTA{
+.Section3 .container .CardContainer .Card .CTA{
     display: flex;
     justify-content: center;
     align-items: center;
     background-size: 0%;
     background-color: #ff2020df;
-    /* transition: all 0.5s  ease; */
 
     height: 80px;
     visibility: hidden;
 }
-.Section3 .container .row .Card{
-    transition: all 5s  ease;
+.Section3   .container .CardContainer .Card{
+    transition: all 3s step-end;
+
 }
 .Section3 .container .row .Card .CTA .fa-heart{
     display: flex;
@@ -167,10 +178,10 @@
 }
 .Section3 .container .row .Card:hover .CTA{
     visibility: visible;
-    transition: all  0.5s ease-in;
-
 }
 .Section3 .container .row .Card:hover .CTA .fa-heart{
+    transition: all .5s ease;
+
     visibility: visible;
 }
 
@@ -198,7 +209,7 @@
 .Section4 .container .row{
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 .Section4 .container .row .you{
@@ -342,6 +353,25 @@
         width: 50%;
         height: 50%;
     }
+
+    .containerCta{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    
+    .Section3  .container .CardContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .Section3 .container .row .Paragraph{
+        width: auto !important;
+    }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .Welcome .container .row h1{
@@ -384,6 +414,8 @@
         width: 85%;
 
     }
+
+
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 }
